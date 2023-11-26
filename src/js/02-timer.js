@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 import "flatpickr/dist/flatpickr.min.css";
 
 
-const NOTIFICATION_DILEY = 3000;
+const NOTIFICATION_DILEY = 1000;
 let intervalId = null;
 let selectedDate = null;
 let currentDate = null;
