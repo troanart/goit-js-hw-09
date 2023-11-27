@@ -54,9 +54,9 @@ function onStartClick() {
 
     intervalId = setInterval(() => {
         currentDate = new Date().getTime();
-        if(selectedDate - currentDate <= 1000) {
+        if(selectedDate < currentDate ) {
             clearInterval(intervalId);
-            button.disabled = true;
+            button.disabled = false;
             inputData.disabled = false;
             return
         } else {
@@ -64,6 +64,8 @@ function onStartClick() {
             convertMs(remainingTime);
         }
     }, NOTIFICATION_DILEY)
+
+    
 }
 
 
