@@ -56,7 +56,7 @@ function onStartClick() {
         currentDate = new Date().getTime();
         if(selectedDate < currentDate ) {
             clearInterval(intervalId);
-            button.disabled = false;
+            button.disabled = true;
             inputData.disabled = false;
             return
         } else {
@@ -65,6 +65,7 @@ function onStartClick() {
         }
     }, NOTIFICATION_DILEY)
 
+   
     
 }
 
